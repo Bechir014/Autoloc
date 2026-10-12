@@ -33,7 +33,8 @@ public class Contrat {
     @Column(nullable = false)
     private boolean valide;
 
-    @OneToMany(mappedBy = "agence",
-            cascade = CascadeType.ALL)
-    private List<Employe> employes;
+    // Relation avec les employés à vérifier
+// @OneToMany(mappedBy = "agence",
+//         cascade = CascadeType.ALL)
+// private List<Employe> employes;
 }
